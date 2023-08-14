@@ -1,7 +1,8 @@
 import streamlit as st
 from googleapiclient.discovery import build
 from nltk.sentiment import SentimentIntensityAnalyzer
-
+import nltk
+nltk.download('vader_lexicon')
 sia = SentimentIntensityAnalyzer()
 
 def analyze_sentiment(comment):
