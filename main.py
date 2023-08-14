@@ -3,7 +3,7 @@ from googleapiclient.discovery import build
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
 #nltk.download('vader_lexicon')
-nltk.data.path.append('packages/sentiment/vader_lexicon.zip')
+nltk.data.path.append('https://github.com/nltk/nltk_data/tree/5db857e6f7df11eabb5e5665836db9ec8df07e28/packages/sentiment')
 sia = SentimentIntensityAnalyzer()
 
 def analyze_sentiment(comment):
